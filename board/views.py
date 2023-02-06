@@ -25,7 +25,7 @@ def index(request):
     else:
             b = Board.objects.all()
 
-    b = b.order_by("pubdate")
+    b = b.order_by("-pubdate")
 
     pag = Paginator(b, 3)
     obj = pag.get_page(pg)

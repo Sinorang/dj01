@@ -33,11 +33,11 @@
     </form>
 
     <div class="text-end mt-5">
-        <audio autoplay controls preload>
-            <source src="/media/tts/result.mp3" type="audio/mp3">
+        <audio controls>
+            <source src="/media/tts/{{ fn }}.mp3" type="audio/mp3">
             지원하지 않은 audio 입니다
         </audio>
-        <a href="{% url 'trans:index' %}" class="btn btn-dark btn-lg mb-5" style="width: 100px;">초기화</a>
+        <a href="{% url 'trans:reset' %}" class="btn btn-dark btn-lg mb-5" style="width: 100px;">초기화</a>
     </div>
     
     <!-- 사이트에 파일 다운로드 하는 방법
